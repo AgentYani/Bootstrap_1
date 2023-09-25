@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <title>Your Name - Resume</title>
+    <style>
+        /* Add custom CSS styles for positioning the pagination buttons */
+        .pagination-buttons {
+            position: fixed;
+            top: 20px; /* Adjust the top position as needed */
+            right: 20px; /* Adjust the right position as needed */
+        }
+
+         /* Add custom CSS to left-align the content */
+         .skills-content {
+            text-align: left;
+            margin-left: 20px; /* Adjust the left margin as needed */
+        }
+        /* Add custom CSS for the title to align left and have a larger font size */
+        .skills-title {
+            text-align: left;
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+
+        /* Add custom CSS for the navigation links */
+        .navigation-links {
+            text-align: center; /* Center the links horizontally */
+            margin-top: 20px; /* Add space between content and links */
+        }
+
+        /* Style each navigation link with different colors */
+        .nav-link1 {
+            color: red;
+        }
+
+        .nav-link2 {
+            color: green;
+        }
+
+        .nav-link3 {
+            color: blue;
+        }
+
+         /* Center the button and contact info */
+         .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px; /* Add space between content and button */
+        }
+
+        </style>
+</head>
+<body>
+  
+    <header>
+        <img src="Artates 2x2.png" alt="Yani" width="150" height="150">
+        <h1>VERYAN L. ARTATES</h1>
+        <p>Web Developer</p>
+    </header>
+    <section class="personal-data">
+        <h2>Personal Data</h2>
+        <ul>
+            <li><strong>Office:</strong> CDA Region 8</li>
+            <li><strong>Office Address:</strong> New Bus Terminal, Tacloban City</li>
+        </ul>
+    </section>
+    <section class="achievements">
+        <h2>Experience</h2>
+        <ul>
+            <li>MIS In-charge and Webmaster for CDA Region VIII.</li>
+            <li>Acting Information Technology Officer (ITO) of CDA Region VIII.</li>
+        </ul>
+    </section>
+    
+    <section class="training">
+        <section class="spinner-section">
+            <h2>Spinner Example</h2>
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    
+    <div class="navigation-links">
+        <a class="nav-link2" href="skills.html">Skills</a>
+        <a class="nav-link3" href="training.html">Training</a>
+    </div>
+<div class="center-content">
+        <!-- Add the "Toggle Contact Info" button here -->
+        <button id="toggle-button">Toggle Contact Info</button>
+
+        <section class="personal-data" id="contact-info">
+            <h2>Contact Details</h2>
+            <ul>
+                <li><strong>Email:</strong> yaniartates@gmail.com</li>
+                <li><strong>CellPhone:</strong> (+63) 916-7411316</li>
+                <li><strong>Address:</strong> San Jose, Tacloban City</li>
+            </ul>
+        </section>
+</div>
+    <section class="personal-data" id="contact-info">
+        <h2>Contact Details</h2>
+        <ul>
+            <li><strong>Email:</strong> yaniartates@gmail.com</li>
+            <li><strong>CellPhone:</strong> (+63) 916-7411316</li>
+            <li><strong>Address:</strong> San Jose, Tacloban City</li>
+        </ul>
+    </section>
+
+    
+
+    <!-- Your JavaScript code here (as provided in the previous responses) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get a reference to the button and contact information
+            const toggleButton = document.getElementById('toggle-button');
+            const contactInfo = document.getElementById('contact-info');
+
+            // Add a click event listener to the button
+            toggleButton.addEventListener('click', function () {
+                // Toggle the visibility of the contact information
+                if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+                    contactInfo.style.display = 'block';
+                } else {
+                    contactInfo.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
